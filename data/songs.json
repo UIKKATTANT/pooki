@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Moonlight Pixels",
+    "artist": "Your Heartbeat",
+    "audio": "./assets/music/song1/audio.mp3",
+    "art": "./assets/music/song1/art.png",
+    "lyrics": [
+      { "time": 0, "text": "[Placeholder lyric] Looking at the stars with you." },
+      { "time": 6, "text": "Everything feels softer when you smile." },
+      { "time": 12, "text": "Tiny pixel hearts keep floating by." }
+    ]
+  },
+  {
+    "title": "Rainy Window Love",
+    "artist": "Pookie Beats",
+    "audio": "./assets/music/song2/audio.mp3",
+    "art": "./assets/music/song2/art.png",
+    "lyrics": [
+      { "time": 0, "text": "[Placeholder lyric] Rain taps on the glass tonight." },
+      { "time": 7, "text": "You laugh and the whole room glows." },
+      { "time": 14, "text": "I'd replay this moment forever." }
+    ]
+  },
+  {
+    "title": "Sunset Hug",
+    "artist": "Forever Us",
+    "audio": "./assets/music/song3/audio.mp3",
+    "art": "./assets/music/song3/art.png",
+    "lyrics": [
+      { "time": 0, "text": "[Placeholder lyric] Sunset paints your face in gold." },
+      { "time": 8, "text": "Hold my hand and don't let go." },
+      { "time": 15, "text": "Love you in every tiny world." }
+    ]
+  }
+]

@@ -1,0 +1,40 @@
+{
+  "default": [
+    {
+      "image": "./assets/images/memes/default-1.png",
+      "caption": "That was brave. Let's try once more.",
+      "reaction": "YOU SURE ABOUT THAT? 😭"
+    },
+    {
+      "image": "./assets/images/memes/default-2.png",
+      "caption": "The council has requested another answer.",
+      "reaction": "SUSPICIOUS CHOICE DETECTED 🤨"
+    }
+  ],
+  "q1": [
+    {
+      "image": "./assets/images/memes/q1/meme-1.png",
+      "caption": "Try reading the question one more time 😌",
+      "reaction": "Hmm... I think you clicked the wrong button 😭"
+    },
+    {
+      "image": "./assets/images/memes/q1/meme-2.png",
+      "caption": "The correct answer is right there 👀",
+      "reaction": "Romance department rejected that"
+    }
+  ],
+  "q2": [
+    {
+      "image": "./assets/images/memes/q2/meme-1.png",
+      "caption": "Interesting opinion. Incorrect, but interesting.",
+      "reaction": "Try again, pookie 😭"
+    }
+  ],
+  "q3": [
+    {
+      "image": "./assets/images/memes/q3/meme-1.png",
+      "caption": "Date request still pending.",
+      "reaction": "Let's discuss this properly 😌"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+.screen.active .panel { animation: fadeInScale 300ms ease; }
+.shake { animation: shake 300ms ease; }
+.heart-burst::after {
+  content: "💗✨💗";
+  display: block;
+  margin-top: 0.5rem;
+  animation: pop 600ms ease;
+}
+.walk-right { animation: walkRight 2s ease forwards; }
+.walk-left { animation: walkLeft 2s ease forwards; }
+.hug-pulse { animation: hugPulse 600ms ease infinite alternate; }
+.blink { animation: blink 1.4s steps(2, start) infinite; }
+
+@keyframes fadeInScale {
+  from { opacity: 0; transform: translateY(8px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes shake {
+  0%,100%{transform:translateX(0)} 25%{transform:translateX(-6px)} 75%{transform:translateX(6px)}
+}
+@keyframes pop {
+  0% { opacity: 0; transform: scale(0.8); }
+  100% { opacity: 1; transform: scale(1); }
+}
+@keyframes walkRight { to { transform: translateX(115px); } }
+@keyframes walkLeft { to { transform: translateX(-115px); } }
+@keyframes hugPulse { to { transform: scale(1.06); } }
+@keyframes blink { 50% { opacity: 0.65; } }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition: none !important; }
+}

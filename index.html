@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="A tiny pixel-art love story." />
+  <title>Pookie 💗</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/animations.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+<body>
+  <a class="sr-only" href="#main-content">Skip to content</a>
+  <div id="secret-heart" class="secret-heart" role="button" tabindex="0" aria-label="Hidden heart">❤</div>
+
+  <main id="main-content" class="app" aria-live="polite">
+    <section id="landing-screen" class="screen active" aria-labelledby="landing-title">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="floating-hearts" aria-hidden="true"></div>
+      <div class="panel">
+        <p class="eyebrow">HEY <span id="landing-nickname">POOKIE</span> 💗</p>
+        <h1 id="landing-title">I made something for you...</h1>
+        <p class="warning-title">WARNING ⚠️</p>
+        <ul class="warning-list">
+          <li>stupid questions</li>
+          <li>suspiciously cute memes</li>
+          <li>unnecessary amounts of love</li>
+          <li>absolutely questionable behavior</li>
+        </ul>
+        <button id="enter-btn" class="pixel-btn primary">ENTER 💗</button>
+      </div>
+    </section>
+
+    <section id="intro-screen" class="screen" aria-labelledby="intro-title">
+      <div class="panel intro-panel">
+        <h2 id="intro-title">Hey, <span id="intro-name"></span> 💗</h2>
+        <p>I have some very important questions for you.</p>
+        <p>Please answer honestly.</p>
+        <p class="blink">Okay?</p>
+        <button id="lets-go-btn" class="pixel-btn primary">LET'S GO →</button>
+      </div>
+    </section>
+
+    <section id="question-screen" class="screen" aria-labelledby="question-title">
+      <div class="panel question-panel">
+        <p id="question-number" class="eyebrow"></p>
+        <h2 id="question-title"></h2>
+        <p class="question-heart" aria-hidden="true">💗</p>
+        <div class="button-row">
+          <button id="yes-btn" class="pixel-btn primary">YES 💕</button>
+          <button id="no-btn" class="pixel-btn secondary">NO 😈</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="reaction-screen" class="screen" aria-labelledby="reaction-title">
+      <div class="panel meme-panel">
+        <img id="meme-image" src="" alt="Funny meme reaction" />
+        <h2 id="reaction-title"></h2>
+        <p id="reaction-caption"></p>
+        <button id="retry-btn" class="pixel-btn primary">Try again 😌</button>
+      </div>
+    </section>
+
+    <section id="songs-screen" class="screen" aria-labelledby="songs-title">
+      <div class="panel songs-panel">
+        <h2 id="songs-title">SONGS FOR YOU 🎧</h2>
+        <div class="song-layout">
+          <img id="song-art" src="" alt="Pixel art for current song" />
+          <div>
+            <h3 id="song-title"></h3>
+            <p id="song-artist"></p>
+          </div>
+        </div>
+        <input id="progress" type="range" min="0" max="100" value="0" aria-label="Song progress" />
+        <p id="time-display">0:00 / 0:00</p>
+        <div class="controls">
+          <button id="prev-btn" class="pixel-btn" aria-label="Previous song">◀</button>
+          <button id="play-btn" class="pixel-btn primary" aria-label="Play or pause">▶</button>
+          <button id="next-btn" class="pixel-btn" aria-label="Next song">▶▶</button>
+        </div>
+        <label for="volume">Volume</label>
+        <input id="volume" type="range" min="0" max="1" step="0.05" value="0.7" aria-label="Volume" />
+        <div id="song-pills" class="song-pills" role="tablist" aria-label="Song selection"></div>
+        <div id="lyrics" class="lyrics" aria-live="polite"></div>
+        <button id="to-final-question-btn" class="pixel-btn primary">Continue story →</button>
+      </div>
+    </section>
+
+    <section id="final-question-screen" class="screen" aria-labelledby="final-question-title">
+      <div class="panel">
+        <p class="eyebrow">FINAL QUESTION</p>
+        <h2 id="final-question-title">So... after surviving all of that... can I have one little hug?</h2>
+        <div class="button-row">
+          <button id="final-yes-btn" class="pixel-btn primary">YES 🫂</button>
+          <button id="final-no-btn" class="pixel-btn secondary">NO 😭</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="hug-screen" class="screen" aria-labelledby="hug-title">
+      <div class="panel hug-panel">
+        <h2 id="hug-title">Virtual hug in progress...</h2>
+        <div class="hug-stage" aria-hidden="true">
+          <span id="char-a" class="character">૮</span>
+          <span id="char-b" class="character">૮</span>
+        </div>
+        <p id="hug-message">Virtual hug delivered successfully. 🫂</p>
+      </div>
+    </section>
+
+    <section id="end-screen" class="screen" aria-labelledby="end-title">
+      <div class="panel end-panel">
+        <p>❤️</p>
+        <h2 id="end-title">I LOVE YOU</h2>
+        <p>❤️</p>
+        <p id="signature"></p>
+        <p>Made especially for you. ✨</p>
+        <button id="replay-btn" class="pixel-btn primary">Replay ↻</button>
+      </div>
+    </section>
+
+    <section id="secret-screen" class="screen" aria-labelledby="secret-title">
+      <div class="panel">
+        <h2 id="secret-title">SECRET UNLOCKED 🔓</h2>
+        <p>You actually found this.</p>
+        <p>I was going to pretend this wasn't here...</p>
+        <p>Hi ❤️</p>
+        <button id="secret-close-btn" class="pixel-btn">Back to story</button>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

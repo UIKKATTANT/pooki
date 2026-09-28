@@ -1,0 +1,142 @@
+:root {
+  --bg: #1f1630;
+  --panel: #352450;
+  --primary: #ff7ab8;
+  --secondary: #9a76ff;
+  --text: #fff4fa;
+  --accent: #ffd6ec;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #3b2961, var(--bg));
+  color: var(--text);
+  min-height: 100vh;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+.app {
+  min-height: 100vh;
+  padding: env(safe-area-inset-top) 1rem env(safe-area-inset-bottom);
+}
+.screen {
+  display: none;
+  min-height: calc(100vh - 2rem);
+  place-items: center;
+}
+.screen.active { display: grid; }
+.panel {
+  width: min(680px, 100%);
+  background: var(--panel);
+  border: 4px solid #ffd4ec;
+  box-shadow: 8px 8px 0 #180f29;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+}
+.eyebrow {
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+.warning-list {
+  text-align: left;
+  display: inline-block;
+  margin: 0.25rem auto 1rem;
+}
+.pixel-btn {
+  border: 3px solid #fff;
+  background: #402b62;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  margin: 0.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  min-height: 48px;
+}
+.pixel-btn.primary { background: var(--primary); color: #2f1230; }
+.pixel-btn.secondary { background: var(--secondary); }
+.pixel-btn:focus-visible, .secret-heart:focus-visible {
+  outline: 3px solid #fff5a0;
+  outline-offset: 2px;
+}
+.button-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.question-heart { font-size: 1.8rem; }
+#meme-image, #song-art {
+  width: min(280px, 90%);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 3px solid #fff;
+  background: #22163b;
+}
+.song-layout {
+  display: grid;
+  gap: 0.8rem;
+  justify-items: center;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+}
+#progress, #volume { width: 100%; }
+.lyrics {
+  max-height: 180px;
+  overflow-y: auto;
+  border: 2px solid #fff3;
+  border-radius: 8px;
+  padding: 0.5rem;
+  text-align: left;
+  background: #1f1430;
+}
+.lyric-line {
+  opacity: 0.65;
+  margin: 0.35rem 0;
+}
+.lyric-line.active {
+  opacity: 1;
+  font-weight: 700;
+  color: #ffd1ec;
+}
+.song-pills {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.song-pill.active { border-color: #fff5a0; }
+.hug-stage {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 320px;
+  margin: 1rem auto;
+}
+.character { font-size: 3rem; }
+.secret-heart {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  opacity: 0.2;
+  cursor: pointer;
+  user-select: none;
+}
+.floating-hearts, .stars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.warning-title { margin-bottom: 0; }
