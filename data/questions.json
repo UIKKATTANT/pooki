@@ -1,0 +1,96 @@
+[
+  {
+    "id": "q1",
+    "question": "Do you think I'm cute?",
+    "yesMessage": "Correct answer detected. 💗",
+    "noMessages": [
+      "Hmm... interesting choice 🤨",
+      "Are you absolutely sure? 😭",
+      "Girl... we're having this conversation again.",
+      "I'm beginning to question your decision-making skills.",
+      "Okay. The button has been formally reported. 😭"
+    ],
+    "retryText": "Try again 😌",
+    "next": "q2"
+  },
+  {
+    "id": "q2",
+    "question": "Do you like talking to me?",
+    "yesMessage": "Hehe knew it 😌",
+    "noMessages": [
+      "That answer has been rejected by the Department of Romance.",
+      "Let's review the evidence one more time.",
+      "That was brave. Incorrect, but brave."
+    ],
+    "retryText": "Try that answer again 💕",
+    "next": "q3"
+  },
+  {
+    "id": "q3",
+    "question": "Would you go on a date with me?",
+    "yesMessage": "Date request accepted 🎉",
+    "noMessages": [
+      "Interesting. I'll pretend I didn't see that.",
+      "The council has requested another answer.",
+      "The correct answer is somewhere between YES and YES."
+    ],
+    "retryText": "Another chance 🫶",
+    "next": "q4"
+  },
+  {
+    "id": "q4",
+    "question": "Do I make you smile?",
+    "yesMessage": "Mission accomplished 😊",
+    "noMessages": ["I think your finger slipped.", "Nice try 😭", "You may have misunderstood the assignment."],
+    "retryText": "Retry 👀",
+    "next": "q5"
+  },
+  {
+    "id": "q5",
+    "question": "Would you choose me for your emergency snack partner?",
+    "yesMessage": "Snacks + us = perfect plan 🍟",
+    "noMessages": ["That answer needs a snack break.", "Are you sure you don't want fries with me?", "Suspicious behavior detected."],
+    "retryText": "Pick again 🍫",
+    "next": "q6"
+  },
+  {
+    "id": "q6",
+    "question": "Do you think we look cute together?",
+    "yesMessage": "Photo booth approved 📸",
+    "noMessages": ["The camera disagrees.", "Try from a better angle?", "Your honor, objection."],
+    "retryText": "Let's retry 📸",
+    "next": "q7"
+  },
+  {
+    "id": "q7",
+    "question": "Would you tolerate my nonsense forever?",
+    "yesMessage": "Eternal nonsense contract signed ✍️",
+    "noMessages": ["Bold answer.", "The nonsense is non-refundable.", "We'll need a retrial."],
+    "retryText": "Try forever mode",
+    "next": "q8"
+  },
+  {
+    "id": "q8",
+    "question": "Do I deserve a hug?",
+    "yesMessage": "Deploying hug protocol 🤗",
+    "noMessages": ["Hug quota not met.", "Please reconsider this hug denial.", "We're still asking nicely."],
+    "retryText": "Re-hug decision",
+    "next": "q9"
+  },
+  {
+    "id": "q9",
+    "question": "Can I keep being your favorite person?",
+    "yesMessage": "Favorite status secured 🏆",
+    "noMessages": ["Ranking committee disagrees.", "Let's do one more vote.", "Pookie system requests retry."],
+    "retryText": "Vote again",
+    "next": "q10"
+  },
+  {
+    "id": "q10",
+    "question": "Will you stay for the rest of this tiny love story?",
+    "yesMessage": "Yay, continuing the story 💖",
+    "noMessages": ["Plot twist denied.", "The story needs you.", "One more tap?"],
+    "retryText": "Continue the story",
+    "next": null
+  }
+]
